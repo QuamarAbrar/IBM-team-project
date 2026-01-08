@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Academic Test Platform</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <div class="login-card">
+            
+            <div class="card-header">
+                <h2>Academic Test Platform</h2>
+                <p>Please provide your details and verify your email</p>
+            </div>
+
+            <form id="loginForm" onsubmit="event.preventDefault()">
+                
+                <div class="form-group">
+                    <label for="username">Username <span class="required">*</span></label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <div class="input-row">
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <button type="button" id="sendOtpBtn" class="btn btn-secondary">Send OTP</button>
+                        <button type="button" id="verifiedBadge" class="btn btn-disabled hidden">
+                            <i class="ri-check-line"></i> Verified
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rollNumber">Roll Number <span class="required">*</span></label>
+                    <input type="text" id="rollNumber" placeholder="Enter your roll number">
+                </div>
+
+                <div id="otpSection" class="hidden fade-in">
+                    <div class="alert alert-info">
+                        <i class="ri-mail-send-line"></i>
+                        <div>
+                            <p>OTP sent to <span id="displayEmail" class="font-bold">...</span></p>
+                            <small>Please check your email and enter the 6-digit code below</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="otpInput">Enter OTP <span class="required">*</span></label>
+                        <div class="input-row">
+                            <input type="text" id="otpInput" placeholder="123456" maxlength="6">
+                            <button type="button" id="verifyBtn" class="btn btn-success">Verify</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="successMessage" class="alert alert-success hidden fade-in">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <p>Email verified successfully!</p>
+                </div>
+
+                <button type="submit" id="mainActionBtn" class="btn btn-primary btn-block" disabled>
+                    Verify Email to Continue
+                </button>
+
+            </form>
+
+            <div class="card-footer">
+                <p>By logging in, you agree to monitored test sessions for academic integrity</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
