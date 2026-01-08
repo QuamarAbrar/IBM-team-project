@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings | Academic Platform</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Academic Platform</h2>
+                <p class="user-handle">zeroW</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="ri-home-4-line"></i> Home</a></li>
+                    <li><a href="upcoming.html"><i class="ri-calendar-event-line"></i> Upcoming Tests</a></li>
+                    <li><a href="past-records.html"><i class="ri-file-list-3-line"></i> Past Test Records</a></li>
+                    <li><a href="leaderboard.html"><i class="ri-trophy-line"></i> Leaderboard</a></li>
+                    <li><a href="practice.html"><i class="ri-book-open-line"></i> Practice Tests</a></li>
+                    <li class="active"><a href="profile.html"><i class="ri-user-line"></i> Profile Settings</a></li>
+                    <li><a href="help.html"><i class="ri-question-line"></i> Help & Feedback</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="login.html" class="logout-link"><i class="ri-logout-box-r-line"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar">
+                <button class="close-btn"><i class="ri-close-line"></i></button>
+                <div class="user-profile">
+                    <div class="text-info">
+                        <span class="name">zeroW</span>
+                        <span class="roll">Roll: 1111111111</span>
+                    </div>
+                    <div class="avatar">Z</div>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                
+                <div class="page-header">
+                    <h1>Profile Settings</h1>
+                    <p>Manage your account settings and preferences</p>
+                </div>
+
+                <div class="settings-card">
+                    <div class="card-header-row">
+                        <h3>Personal Information</h3>
+                        <button class="btn-primary" id="editProfileBtn">Edit Profile</button>
+                    </div>
+
+                    <div class="profile-header">
+                        <div class="big-avatar">Z</div>
+                        <div class="profile-meta">
+                            <h4>zeroW</h4>
+                            <p>quamar.abrar.sot25@pwioi.com</p>
+                            <span class="roll-badge">Roll No: 1111111111</span>
+                        </div>
+                    </div>
+
+                    <form id="personalInfoForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" value="zeroW" disabled class="input-field">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" value="quamar.abrar.sot25@pwioi.com" disabled class="input-field">
+                            </div>
+                            <div class="form-group">
+                                <label>Roll Number</label>
+                                <input type="text" value="1111111111" disabled class="input-field">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="text" value="+1 (555) 123-4567" disabled class="input-field editable">
+                            </div>
+                            <div class="form-group">
+                                <label>Department</label>
+                                <input type="text" value="Computer Science" disabled class="input-field editable">
+                            </div>
+                            <div class="form-group">
+                                <label>Year of Study</label>
+                                <input type="text" value="3rd Year" disabled class="input-field editable">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="settings-card">
+                    <div class="card-header-row">
+                        <h3><i class="ri-notification-3-line"></i> Notification Preferences</h3>
+                    </div>
+                    
+                    <div class="toggles-list">
+                        <div class="toggle-item">
+                            <div class="toggle-info">
+                                <h4>Email Notifications</h4>
+                                <p>Receive updates via email</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="toggle-item">
+                            <div class="toggle-info">
+                                <h4>Test Reminders</h4>
+                                <p>Get notified before test starts</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="toggle-item">
+                            <div class="toggle-info">
+                                <h4>Result Alerts</h4>
+                                <p>Notify when results are published</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="toggle-item">
+                            <div class="toggle-info">
+                                <h4>Leaderboard Updates</h4>
+                                <p>Track your ranking changes</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <div class="card-header-row">
+                        <h3><i class="ri-shield-key-line"></i> Security Settings</h3>
+                    </div>
+
+                    <div class="security-form-section">
+                        <h4>Change Password</h4>
+                        <div class="form-stack">
+                            <div class="form-group">
+                                <input type="password" placeholder="Current password" class="input-field">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="New password" class="input-field">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Confirm new password" class="input-field">
+                            </div>
+                            <button class="btn-primary" style="width: auto; align-self: flex-start;">Update Password</button>
+                        </div>
+                    </div>
+
+                    <div class="toggle-item border-top">
+                        <div class="toggle-info">
+                            <h4>Two-Factor Authentication</h4>
+                            <p>Add an extra layer of security</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="session-timeout border-top">
+                        <div class="toggle-info">
+                            <h4>Session Timeout</h4>
+                        </div>
+                        <select class="input-field select-box">
+                            <option>15 minutes</option>
+                            <option>30 minutes</option>
+                            <option selected>1 hour</option>
+                            <option>4 hours</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

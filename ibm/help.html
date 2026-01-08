@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Feedback | Academic Platform</title>
+    <link rel="stylesheet" href="help.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Academic Platform</h2>
+                <p class="user-handle">zeroW</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="ri-home-4-line"></i> Home</a></li>
+                    <li><a href="upcoming.html"><i class="ri-calendar-event-line"></i> Upcoming Tests</a></li>
+                    <li><a href="past-records.html"><i class="ri-file-list-3-line"></i> Past Test Records</a></li>
+                    <li><a href="leaderboard.html"><i class="ri-trophy-line"></i> Leaderboard</a></li>
+                    <li><a href="practice.html"><i class="ri-book-open-line"></i> Practice Tests</a></li>
+                    <li><a href="profile.html"><i class="ri-user-line"></i> Profile Settings</a></li>
+                    <li class="active"><a href="help.html"><i class="ri-question-line"></i> Help & Feedback</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="login.html" class="logout-link"><i class="ri-logout-box-r-line"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar">
+                <button class="close-btn"><i class="ri-close-line"></i></button>
+                <div class="user-profile">
+                    <div class="text-info">
+                        <span class="name">zeroW</span>
+                        <span class="roll">Roll: 1111111111</span>
+                    </div>
+                    <div class="avatar">Z</div>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                
+                <div class="page-header">
+                    <h1>Help & Feedback</h1>
+                    <p>Find answers or share your feedback with us</p>
+                </div>
+
+                <section class="support-banner">
+                    <h3>Need Immediate Help?</h3>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="icon-circle"><i class="ri-mail-line"></i></div>
+                            <div>
+                                <span class="label">Email</span>
+                                <span class="value">support@academic.edu</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-circle"><i class="ri-phone-line"></i></div>
+                            <div>
+                                <span class="label">Phone</span>
+                                <span class="value">+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-circle"><i class="ri-message-3-line"></i></div>
+                            <div>
+                                <span class="label">Live Chat</span>
+                                <a href="#" class="chat-link">Start Chat</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="faq-section">
+                    <h3><i class="ri-book-read-line"></i> Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How do I join a test?</span>
+                                <i class="ri-add-circle-line toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Navigate to "Upcoming Tests" 10 minutes before the scheduled time. A "Join Now" button will appear active. Click it to enter the test environment.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>What permissions are required for tests?</span>
+                                <i class="ri-add-circle-line toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You must grant permission for your Camera, Microphone, and Screen Sharing to ensure academic integrity during the monitored session.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Can I retake a test?</span>
+                                <i class="ri-add-circle-line toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Generally, tests cannot be retaken once submitted. However, if you faced a technical error, please contact support immediately.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How is the leaderboard calculated?</span>
+                                <i class="ri-add-circle-line toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Rankings are based on a weighted average of your test scores, accuracy percentage, and the total number of tests attempted.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item active">
+                            <div class="faq-question">
+                                <span>How do I download my test results?</span>
+                                <i class="ri-indeterminate-circle-line toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Go to "Past Test Records", click on any test, and then click the "Download Report" button to get a detailed PDF report.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="feedback-section">
+                    <h3><i class="ri-chat-smile-2-line"></i> Send Feedback</h3>
+                    <form id="feedbackForm">
+                        <label class="form-label">Feedback Type</label>
+                        <div class="type-buttons">
+                            <button type="button" class="type-btn" data-type="bug"><i class="ri-bug-line"></i> Bug Report</button>
+                            <button type="button" class="type-btn" data-type="feature"><i class="ri-lightbulb-line"></i> Feature Request</button>
+                            <button type="button" class="type-btn active" data-type="general"><i class="ri-message-2-line"></i> General</button>
+                        </div>
+
+                        <label class="form-label">Your Message</label>
+                        <textarea class="feedback-input" placeholder="Tell us what's on your mind..."></textarea>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit"><i class="ri-send-plane-fill"></i> Submit Feedback</button>
+                            <button type="reset" class="btn-clear">Clear</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="resources-footer">
+                    <h4>Additional Resources</h4>
+                    <ul class="resource-links">
+                        <li><a href="#"><i class="ri-book-open-line"></i> User Guide & Documentation</a></li>
+                        <li><a href="#"><i class="ri-video-line"></i> Video Tutorials</a></li>
+                        <li><a href="#"><i class="ri-file-list-check-line"></i> Test Taking Best Practices</a></li>
+                        <li><a href="#"><i class="ri-tools-line"></i> Technical Requirements</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="help.js"></script>
+</body>
+</html>

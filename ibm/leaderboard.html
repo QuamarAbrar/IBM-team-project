@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | Academic Platform</title>
+    <link rel="stylesheet" href="leaderboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Academic Platform</h2>
+                <p class="user-handle">zeroW</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="ri-home-4-line"></i> Home</a></li>
+                    <li><a href="upcoming.html"><i class="ri-calendar-event-line"></i> Upcoming Tests</a></li>
+                    <li><a href="past-records.html"><i class="ri-file-list-3-line"></i> Past Test Records</a></li>
+                    <li class="active"><a href="leaderboard.html"><i class="ri-trophy-line"></i> Leaderboard</a></li>
+                    <li><a href="practice.html"><i class="ri-book-open-line"></i> Practice Tests</a></li>
+                    <li><a href="profile.html"><i class="ri-user-line"></i> Profile Settings</a></li>
+                    <li><a href="help.html"><i class="ri-question-line"></i> Help & Feedback</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="login.html" class="logout-link"><i class="ri-logout-box-r-line"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar">
+                <button class="close-btn"><i class="ri-close-line"></i></button>
+                <div class="user-profile">
+                    <div class="text-info">
+                        <span class="name">zeroW</span>
+                        <span class="roll">Roll: 1111111111</span>
+                    </div>
+                    <div class="avatar">Z</div>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                
+                <div class="page-header">
+                    <h1>Leaderboard</h1>
+                    <p>See how you rank among your peers</p>
+                </div>
+
+                <div class="filters-container">
+                    <button class="filter-btn active">Overall Ranking</button>
+                    <button class="filter-btn">Mathematics Mid-Term</button>
+                    <button class="filter-btn">Physics Quiz 3</button>
+                    <button class="filter-btn">Chemistry Assignment</button>
+                    <button class="filter-btn">Biology Assessment</button>
+                </div>
+
+                <section class="podium-section">
+                    <div class="podium-card silver">
+                        <div class="medal-icon"><i class="ri-medal-2-fill"></i></div>
+                        <div class="avatar-circle">M</div>
+                        <h3 class="student-name">Michael Chen</h3>
+                        <p class="roll-no">CS-2023-045</p>
+                        <div class="score">96%</div>
+                    </div>
+
+                    <div class="podium-card gold">
+                        <div class="trophy-icon"><i class="ri-trophy-fill"></i></div>
+                        <div class="avatar-circle">S</div>
+                        <h3 class="student-name">Sarah Johnson</h3>
+                        <p class="roll-no">CS-2023-001</p>
+                        <div class="score">98%</div>
+                    </div>
+
+                    <div class="podium-card bronze">
+                        <div class="medal-icon"><i class="ri-medal-fill"></i></div>
+                        <div class="avatar-circle">E</div>
+                        <h3 class="student-name">Emma Davis</h3>
+                        <p class="roll-no">CS-2023-089</p>
+                        <div class="score">95%</div>
+                    </div>
+                </section>
+
+                <section class="ranking-table-container">
+                    <table class="ranking-table">
+                        <thead>
+                            <tr>
+                                <th width="10%">Rank</th>
+                                <th width="25%">Student</th>
+                                <th width="15%">Roll Number</th>
+                                <th width="10%">Score</th>
+                                <th width="25%">Accuracy</th>
+                                <th width="15%">Tests</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboardBody">
+                            </tbody>
+                    </table>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Test Records | Academic Platform</title>
+    <link rel="stylesheet" href="past-records.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Academic Platform</h2>
+                <p class="user-handle">zeroW</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="ri-home-4-line"></i> Home</a></li>
+                    <li><a href="upcoming.html"><i class="ri-calendar-event-line"></i> Upcoming Tests</a></li>
+                    <li class="active"><a href="past-records.html"><i class="ri-file-list-3-line"></i> Past Test Records</a></li>
+                    <li><a href="leaderboard.html"><i class="ri-trophy-line"></i> Leaderboard</a></li>
+                    <li><a href="practice-tests.html"><i class="ri-book-open-line"></i> Practice Tests</a></li>
+                    <li><a href="profile-settings.html"><i class="ri-user-line"></i> Profile Settings</a></li>
+                    <li><a href="help.html"><i class="ri-question-line"></i> Help & Feedback</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="login.html" class="logout-link"><i class="ri-logout-box-r-line"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar">
+                <button class="close-btn"><i class="ri-close-line"></i></button>
+                <div class="user-profile">
+                    <div class="text-info">
+                        <span class="name">zeroW</span>
+                        <span class="roll">Roll: 1111111111</span>
+                    </div>
+                    <div class="avatar">Z</div>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                
+                <div class="page-header">
+                    <h1>Past Test Records</h1>
+                    <p>Review your performance and detailed analytics</p>
+                </div>
+
+                <section class="stats-summary">
+                    <div class="summary-card">
+                        <div class="icon blue"><i class="ri-file-text-line"></i></div>
+                        <div>
+                            <span class="label">Tests Taken</span>
+                            <h3 class="value">5</h3>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="icon green"><i class="ri-bar-chart-grouped-line"></i></div>
+                        <div>
+                            <span class="label">Average Score</span>
+                            <h3 class="value">86.4%</h3>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="icon yellow"><i class="ri-medal-line"></i></div>
+                        <div>
+                            <span class="label">Best Score</span>
+                            <h3 class="value">94%</h3>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="icon purple"><i class="ri-time-line"></i></div>
+                        <div>
+                            <span class="label">Avg. Completion</span>
+                            <h3 class="value">95%</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="records-container" id="recordsList">
+                    </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="past-records.js"></script>
+</body>
+</html>

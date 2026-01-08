@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Academic Platform</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Academic Platform</h2>
+                <p class="user-handle">zeroW</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="dashboard.html"><i class="ri-home-4-line"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="upcoming.html"><i class="ri-calendar-event-line"></i> Upcoming Tests</a>
+                    </li>
+                    <li>
+                        <a href="past-records.html"><i class="ri-file-list-3-line"></i> Past Test Records</a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html"><i class="ri-trophy-line"></i> Leaderboard</a>
+                    </li>
+                    <li>
+                        <a href="practice.html"><i class="ri-book-open-line"></i> Practice Tests</a>
+                    </li>
+                    <li>
+                        <a href="profile-settings.html"><i class="ri-user-line"></i> Profile Settings</a>
+                    </li>
+                    <li>
+                        <a href="help.html"><i class="ri-question-line"></i> Help & Feedback</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="login.html" class="logout-link"><i class="ri-logout-box-r-line"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar">
+                <button class="close-btn"><i class="ri-close-line"></i></button>
+                <div class="user-profile">
+                    <div class="text-info">
+                        <span class="name">zeroW</span>
+                        <span class="roll">Roll: 1111111111</span>
+                    </div>
+                    <div class="avatar">Z</div>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                
+                <section class="welcome-banner">
+                    <div class="banner-text">
+                        <h1>Welcome back, zeroW!</h1>
+                        <p>Ready to ace your next test? Let's get started.</p>
+                    </div>
+                </section>
+
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="icon-box green"><i class="ri-checkbox-circle-line"></i></div>
+                        <div class="stat-info">
+                            <h3>Tests Completed</h3>
+                            <span class="number">12</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon-box blue"><i class="ri-time-line"></i></div>
+                        <div class="stat-info">
+                            <h3>Upcoming Tests</h3>
+                            <span class="number">3</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon-box purple"><i class="ri-bar-chart-line"></i></div>
+                        <div class="stat-info">
+                            <h3>Average Score</h3>
+                            <span class="number">85%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon-box yellow"><i class="ri-trophy-fill"></i></div>
+                        <div class="stat-info">
+                            <h3>Leaderboard Rank</h3>
+                            <span class="number">#24</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="split-section">
+                    
+                    <div class="section-column">
+                        <h3 class="section-title">Recent Test Results</h3>
+                        <div class="card-container" id="recentResultsList">
+                            </div>
+                    </div>
+
+                    <div class="section-column">
+                        <h3 class="section-title">Upcoming Tests</h3>
+                        <div class="card-container" id="upcomingTestsList">
+                            </div>
+                    </div>
+                </section>
+
+                <section class="quick-actions">
+                    <h3 class="section-title">Quick Actions</h3>
+                    <div class="actions-grid">
+                        <div class="action-card blue-bg">
+                            <h4>Start Practice Test</h4>
+                            <p>Prepare for your upcoming exams</p>
+                        </div>
+                        <div class="action-card pink-bg">
+                            <h4>View Performance</h4>
+                            <p>Check your detailed analytics</p>
+                        </div>
+                        <div class="action-card green-bg">
+                            <h4>Join Live Test</h4>
+                            <p>Enter active test session</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
